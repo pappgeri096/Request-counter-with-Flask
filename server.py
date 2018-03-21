@@ -3,11 +3,9 @@ app = Flask(__name__)
 
 
 @app.route('/')
-@app.route('/list')
+@app.route('/request-counter')
 def list_questions():
-    questions = read_questions()
-
-    return render_template('questions.html', questions=questions)
+    pass
 
 
 
