@@ -1,12 +1,12 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 app = Flask(__name__)
 
+count = 0
 
 @app.route('/')
 @app.route('/request-counter')
-def list_questions():
-    pass
-
+def request_counter():
+    return render_template("request.html")
 
 
 if __name__ == '__main__':
